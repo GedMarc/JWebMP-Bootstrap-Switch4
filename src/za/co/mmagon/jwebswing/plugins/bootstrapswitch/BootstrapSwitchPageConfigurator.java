@@ -45,7 +45,6 @@ class BootstrapSwitchPageConfigurator extends PageConfigurator
 		if (!page.isConfigured())
 		{
 			JQueryPageConfigurator.setRequired(true);
-			BootstrapPageConfigurator.setRequired(page.getBody(), true);
 			page.getBody().addJavaScriptReference(BootstrapSwitchReferencePool.BootstrapSwitch.getJavaScriptReference());
 			page.getBody().addCssReference(BootstrapSwitchReferencePool.BootstrapSwitch.getCssReference());
 		}

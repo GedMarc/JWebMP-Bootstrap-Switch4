@@ -3,7 +3,6 @@ package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 
 /**
@@ -24,9 +23,9 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://bootstrapswitch.com/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapSwitch.jar/download"
-)
-class BootstrapSwitchPageConfigurator extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapSwitch.jar/download") class
+BootstrapSwitchPageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -45,8 +44,10 @@ class BootstrapSwitchPageConfigurator extends PageConfigurator
 		if (!page.isConfigured())
 		{
 			JQueryPageConfigurator.setRequired(true);
-			page.getBody().addJavaScriptReference(BootstrapSwitchReferencePool.BootstrapSwitch.getJavaScriptReference());
-			page.getBody().addCssReference(BootstrapSwitchReferencePool.BootstrapSwitch.getCssReference());
+			page.getBody()
+			    .addJavaScriptReference(BootstrapSwitchReferencePool.BootstrapSwitch.getJavaScriptReference());
+			page.getBody()
+			    .addCssReference(BootstrapSwitchReferencePool.BootstrapSwitch.getCssReference());
 		}
 		return page;
 	}

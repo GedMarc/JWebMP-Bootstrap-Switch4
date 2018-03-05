@@ -2,7 +2,7 @@ package za.co.mmagon.jwebswing.plugins.bootstrapswitch;
 
 import za.co.mmagon.jwebswing.base.html.inputs.InputRadioType;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.bootstrap4.forms.groups.BSFormGroupOptions;
+import za.co.mmagon.jwebswing.plugins.bootstrap4.forms.groups.enumerations.BSFormGroupOptions;
 
 import java.util.Objects;
 

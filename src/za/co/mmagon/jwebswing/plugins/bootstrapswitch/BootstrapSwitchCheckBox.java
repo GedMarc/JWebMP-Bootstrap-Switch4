@@ -5,7 +5,7 @@ import za.co.mmagon.jwebswing.plugins.bootstrap4.buttons.checkbox.BSCheckBox;
 
 import java.util.Objects;
 
-import static za.co.mmagon.jwebswing.plugins.bootstrap4.forms.groups.BSFormGroupOptions.Form_Control;
+import static za.co.mmagon.jwebswing.plugins.bootstrap4.forms.groups.enumerations.BSFormGroupOptions.Form_Control;
 
 /**
  * Turn checkboxes and radio buttons into toggle switches. Created by Mattia Larentis, maintained by Emanuele Marchi and Peter Stein with

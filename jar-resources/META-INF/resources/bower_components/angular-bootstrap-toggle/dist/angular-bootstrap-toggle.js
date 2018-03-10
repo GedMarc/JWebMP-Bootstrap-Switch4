@@ -15,7 +15,7 @@
              * User-defined values are not supported.
              */
             'btnCheckboxFalse': false,
-            'btnCheckboxTrue' : true,
+            'btnCheckboxTrue': true,
             /**
              * Type: string/html
              * Default: "On"
@@ -68,7 +68,7 @@
              * would never line-up to the same width.
              * Example: <toggle ... width="90px">
              */
-            width : '',
+            width: '',
             height: '',
             /**
              * Type: boolean
@@ -95,7 +95,7 @@
                     var toggleConfigKeys = Object.keys(toggleConfig);
 
                     // Configuration attributes
-                    angular.forEach( toggleConfigKeys, function (k, i) {
+                    angular.forEach(toggleConfigKeys, function (k, i) {
                         if (angular.isDefined($attrs[k])) {
                             /*
                              if (i < toggleConfigKeys.length) {
@@ -104,7 +104,7 @@
                              self[k] = $scope.$parent.$eval($attrs[k]);
                              }
                              */
-                            switch ( typeof toggleConfig[k] ) {
+                            switch (typeof toggleConfig[k]) {
                                 case 'string':
                                     self[k] = $interpolate($attrs[k])($scope.$parent);
                                     break;
@@ -123,8 +123,8 @@
                         ngModelCtrl = ngModelCtrl_;
 
                         labels = self.element.find('label');
-                        spans  = self.element.find('span');
-                        divs   = self.element.find('div');
+                        spans = self.element.find('span');
+                        divs = self.element.find('div');
                         // ^-- divs[0] is the DIV that has class="toggle btn"
                         //     divs[1] is a child of [0] and has class="toggle-group"
 
@@ -154,7 +154,7 @@
                         // the click event. Click event is handled in .onSwitch().
                         angular.element(labels[0]).attr('disabled', self.disabled);
                         angular.element(labels[1]).attr('disabled', self.disabled);
-                        angular.element( spans[0]).attr('disabled', self.disabled);
+                        angular.element(spans[0]).attr('disabled', self.disabled);
 
                         // Build an object for widget's ng-style
                         $scope.wrapperStyle = (self.toggleStyle) ? $scope.$parent.$eval(self.toggleStyle) : {};
@@ -188,9 +188,9 @@
                         }
 
                         // Build arrays that will be passed to widget's ng-class.
-                        $scope.onClass     = [self.onstyle , self.size, 'toggle-on'];
-                        $scope.offClass    = [self.offstyle, self.size, 'toggle-off'];
-                        $scope.handleClass = [self.size , 'toggle-handle'];
+                        $scope.onClass = [self.onstyle, self.size, 'toggle-on'];
+                        $scope.offClass = [self.offstyle, self.size, 'toggle-off'];
+                        $scope.handleClass = [self.size, 'toggle-handle'];
                     };
 
                     this.toggle = function () {
@@ -225,7 +225,7 @@
                         });
                     });
 
-                    angular.forEach( toggleConfigKeys, function (k, i) {
+                    angular.forEach(toggleConfigKeys, function (k, i) {
                         $attrs.$observe(k, function (v) {
                             if (self[k] !== v) {
                                 self[k] = v;
@@ -259,7 +259,8 @@
                                 toggleCtrl.element = element;
                                 toggleCtrl.init(ngModelCtrl);
                             },
-                            post: function () {}
+                            post: function () {
+                            }
                         }
                     }
                 };

@@ -1,0 +1,1 @@
+.toggle-off.ios,.toggle-on.ios,.toggle.ios,.toggle.ios .toggle-handle{border-radius:20px}.toggle.android,.toggle.android .toggle-handle{border-radius:0}.slow .toggle-group{transition:left .7s;-webkit-transition:left .7s}.fast .toggle-group{transition:left .1s;-webkit-transition:left .1s}.quick .toggle-group{transition:none;-webkit-transition:none}

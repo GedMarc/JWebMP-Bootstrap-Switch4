@@ -1,14 +1,30 @@
-package za.co.mmagon.jwebswing.plugins.bootstraptoggle;
+/*
+ * Copyright (C) 2017 Marc Magon
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
-import za.co.mmagon.jwebswing.base.angular.AngularAttributes;
-import za.co.mmagon.jwebswing.base.html.DivSimple;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.bootstrap4.buttons.BSButtonOptions;
-import za.co.mmagon.jwebswing.plugins.bootstrap4.buttons.BSButtonSizeOptions;
+package com.jwebmp.plugins.bootstraptoggle;
+
+import com.jwebmp.base.angular.AngularAttributes;
+import com.jwebmp.base.html.DivSimple;
+import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.plugins.bootstrap4.buttons.BSButtonOptions;
+import com.jwebmp.plugins.bootstrap4.buttons.BSButtonSizeOptions;
+import com.jwebmp.plugins.bootstrap4.forms.groups.enumerations.BSFormGroupOptions;
 
 import javax.validation.constraints.NotNull;
-
-import static za.co.mmagon.jwebswing.plugins.bootstrap4.forms.groups.enumerations.BSFormGroupOptions.Form_Control;
 
 /**
  * Turn checkboxes and radio buttons into toggle switches. Created by Mattia Larentis, maintained by Emanuele Marchi and Peter Stein with
@@ -110,7 +126,7 @@ public class BSToggle<J extends BSToggle<J>>
 	public void preConfigure()
 	{
 		super.preConfigure();
-		addClass(Form_Control);
+		addClass(BSFormGroupOptions.Form_Control);
 
 	}
 

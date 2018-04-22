@@ -17,12 +17,11 @@
 
 package com.jwebmp.plugins.bootstraptoggle;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.plugins.bootstrap4.buttons.BSButtonOptions;
 import org.junit.jupiter.api.Test;
 
 class BSToggleTest
-		extends BaseTestClass
+
 {
 
 	@Test

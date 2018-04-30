@@ -18,7 +18,8 @@
 package com.jwebmp.plugins.bootstraptoggle;
 
 import com.jwebmp.base.angular.AngularAttributes;
-import com.jwebmp.base.html.DivSimple;
+import com.jwebmp.base.html.Input;
+import com.jwebmp.base.html.interfaces.AttributeDefinitions;
 import com.jwebmp.plugins.ComponentInformation;
 import com.jwebmp.plugins.bootstrap4.buttons.BSButtonOptions;
 import com.jwebmp.plugins.bootstrap4.buttons.BSButtonSizeOptions;
@@ -36,8 +37,8 @@ import javax.validation.constraints.NotNull;
 @ComponentInformation(name = "Bootstrap Switch Check Box",
 		description = "Turn checkboxes    and radio buttons    into toggle switches  ",
 		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
-public class BSToggle<J extends BSToggle<J>>
-		extends DivSimple<J>
+public class BSToggle<A extends Enum & AttributeDefinitions, J extends BSToggle<A, J>>
+		extends Input<A, J>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -48,6 +49,7 @@ public class BSToggle<J extends BSToggle<J>>
 	public BSToggle()
 	{
 		setTag("toggle");
+		addClass(BSFormGroupOptions.Form_Control);
 	}
 
 	@SuppressWarnings("unchecked")
@@ -57,6 +59,27 @@ public class BSToggle<J extends BSToggle<J>>
 	{
 		addAttribute(AngularAttributes.ngModel, variableName);
 		return (J) this;
+	}
+
+	@Override
+	@SuppressWarnings("unchecked")
+	@NotNull
+	public J setRequired()
+	{
+		addAttribute(AngularAttributes.ngRequired, "true");
+		return (J) this;
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		return super.equals(o);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
 	}
 
 	/**
@@ -126,19 +149,5 @@ public class BSToggle<J extends BSToggle<J>>
 	public void preConfigure()
 	{
 		super.preConfigure();
-		addClass(BSFormGroupOptions.Form_Control);
-
-	}
-
-	@Override
-	public boolean equals(Object o)
-	{
-		return super.equals(o);
-	}
-
-	@Override
-	public int hashCode()
-	{
-		return super.hashCode();
 	}
 }

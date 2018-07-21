@@ -17,10 +17,10 @@
 
 package com.jwebmp.plugins.bootstraptoggle;
 
-import com.jwebmp.base.angular.AngularAttributes;
-import com.jwebmp.base.html.Input;
-import com.jwebmp.base.html.interfaces.AttributeDefinitions;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.angular.AngularAttributes;
+import com.jwebmp.core.base.html.Input;
+import com.jwebmp.core.base.html.interfaces.AttributeDefinitions;
+import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.plugins.bootstrap4.buttons.BSButtonOptions;
 import com.jwebmp.plugins.bootstrap4.buttons.BSButtonSizeOptions;
 import com.jwebmp.plugins.bootstrap4.forms.groups.enumerations.BSFormGroupOptions;

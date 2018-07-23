@@ -18,9 +18,11 @@
 package com.jwebmp.plugins.bootstraptoggle;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
+import com.jwebmp.core.base.angular.services.IAngularModule;
 
 public class BSToggleAngularModule
 		extends AngularModuleBase
+		implements IAngularModule<BSToggleAngularModule>
 {
 	public BSToggleAngularModule()
 	{

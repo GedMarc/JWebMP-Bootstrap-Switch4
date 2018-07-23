@@ -1,3 +1,8 @@
+import com.jwebmp.core.base.angular.services.IAngularModule;
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.bootstraptoggle.BSToggleAngularModule;
+import com.jwebmp.plugins.bootstraptoggle.BSTogglePageConfigurator;
+
 module com.jwebmp.plugins.bootstraptoggle {
 	exports com.jwebmp.plugins.bootstraptoggle;
 
@@ -7,4 +12,8 @@ module com.jwebmp.plugins.bootstraptoggle {
 
 	requires com.jwebmp.plugins.bootstrap4;
 	requires java.validation;
+
+	provides IPageConfigurator with BSTogglePageConfigurator;
+	provides IAngularModule with BSToggleAngularModule;
+
 }

@@ -16,4 +16,5 @@ module com.jwebmp.plugins.bootstraptoggle {
 	provides IPageConfigurator with BSTogglePageConfigurator;
 	provides IAngularModule with BSToggleAngularModule;
 
+	opens com.jwebmp.plugins.bootstraptoggle to com.fasterxml.jackson.databind,com.jwebmp.core;
 }

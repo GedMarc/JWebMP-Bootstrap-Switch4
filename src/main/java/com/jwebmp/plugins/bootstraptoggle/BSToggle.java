@@ -36,7 +36,7 @@ import javax.validation.constraints.NotNull;
  */
 @ComponentInformation(name = "Bootstrap Switch Check Box",
 		description = "Turn checkboxes    and radio buttons    into toggle switches  ",
-		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Switch")
+		url = "https://github.com/GedMarc/JWebMP-Bootstrap-Switch")
 public class BSToggle<A extends Enum & AttributeDefinitions, J extends BSToggle<A, J>>
 		extends Input<A, J>
 {

@@ -41,7 +41,6 @@ public class BSToggle<A extends Enum & AttributeDefinitions, J extends BSToggle<
 		extends Input<A, J>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new BootstrapSwitchCheckBox
@@ -71,15 +70,15 @@ public class BSToggle<A extends Enum & AttributeDefinitions, J extends BSToggle<
 	}
 
 	@Override
-	public boolean equals(Object o)
-	{
-		return super.equals(o);
-	}
-
-	@Override
 	public int hashCode()
 	{
 		return super.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		return super.equals(o);
 	}
 
 	/**

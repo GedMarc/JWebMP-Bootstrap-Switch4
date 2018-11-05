@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstraptoggle;
+package com.jwebmp.plugins.bootstrap.switch4;
 
 import com.jwebmp.core.base.angular.AngularAttributes;
 import com.jwebmp.core.base.html.Input;
@@ -37,7 +37,7 @@ import javax.validation.constraints.NotNull;
 @ComponentInformation(name = "Bootstrap Switch Check Box",
 		description = "Turn checkboxes    and radio buttons    into toggle switches  ",
 		url = "https://github.com/GedMarc/JWebMP-Bootstrap-Switch")
-public class BSToggle<A extends Enum & AttributeDefinitions, J extends BSToggle<A, J>>
+public class BSSwitch4<A extends Enum & AttributeDefinitions, J extends BSSwitch4<A, J>>
 		extends Input<A, J>
 {
 
@@ -45,7 +45,7 @@ public class BSToggle<A extends Enum & AttributeDefinitions, J extends BSToggle<
 	/*
 	 * Constructs a new BootstrapSwitchCheckBox
 	 */
-	public BSToggle()
+	public BSSwitch4()
 	{
 		setTag("toggle");
 		addClass(BSFormGroupOptions.Form_Control);

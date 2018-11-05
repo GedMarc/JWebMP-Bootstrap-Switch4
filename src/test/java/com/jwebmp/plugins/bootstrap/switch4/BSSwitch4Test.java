@@ -15,19 +15,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstraptoggle;
+package com.jwebmp.plugins.bootstrap.switch4;
 
 import com.jwebmp.plugins.bootstrap4.buttons.BSButtonOptions;
 import org.junit.jupiter.api.Test;
 
-class BSToggleTest
+class BSSwitch4Test
 
 {
 
 	@Test
 	void setOnText()
 	{
-		BSToggle toggle = new BSToggle();
+		BSSwitch4 toggle = new BSSwitch4();
 		toggle.setOnText("On Text");
 		toggle.setOnText("On Text");
 		toggle.setOffText("Off Text");

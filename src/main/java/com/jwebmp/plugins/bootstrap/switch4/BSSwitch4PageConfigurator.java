@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.bootstraptoggle;
+package com.jwebmp.plugins.bootstrap.switch4;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
@@ -27,8 +27,8 @@ import javax.validation.constraints.NotNull;
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://bootstrapswitch.com/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapSwitch.jar/download")
-public class BSTogglePageConfigurator
-		implements IPageConfigurator<BSTogglePageConfigurator>
+public class BSSwitch4PageConfigurator
+		implements IPageConfigurator<BSSwitch4PageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
@@ -38,7 +38,7 @@ public class BSTogglePageConfigurator
 	/*
 	 * Constructs a new BootstrapSwitchPageConfigurator
 	 */
-	public BSTogglePageConfigurator()
+	public BSSwitch4PageConfigurator()
 	{
 		//Nothing needed
 	}
@@ -52,7 +52,7 @@ public class BSTogglePageConfigurator
 	 */
 	public static boolean isEnabled()
 	{
-		return BSTogglePageConfigurator.enabled;
+		return BSSwitch4PageConfigurator.enabled;
 	}
 
 	/**
@@ -65,7 +65,7 @@ public class BSTogglePageConfigurator
 	 */
 	public static void setEnabled(boolean mustEnable)
 	{
-		BSTogglePageConfigurator.enabled = mustEnable;
+		BSSwitch4PageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -77,11 +77,11 @@ public class BSTogglePageConfigurator
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
 			page.getBody()
-			    .addJavaScriptReference(BSToggleReferencePool.BootstrapSwitch.getJavaScriptReference());
+			    .addJavaScriptReference(BSSwitch4ReferencePool.BootstrapSwitch.getJavaScriptReference());
 			page.getBody()
-			    .addCssReference(BSToggleReferencePool.BootstrapSwitch.getCssReference());
+			    .addCssReference(BSSwitch4ReferencePool.BootstrapSwitch.getCssReference());
 			page.getBody()
-			    .addCssReference(BSToggleReferencePool.BSToggleCustomStyles.getCssReference());
+			    .addCssReference(BSSwitch4ReferencePool.BSToggleCustomStyles.getCssReference());
 		}
 		return page;
 	}
@@ -89,6 +89,6 @@ public class BSTogglePageConfigurator
 	@Override
 	public boolean enabled()
 	{
-		return BSTogglePageConfigurator.enabled;
+		return BSSwitch4PageConfigurator.enabled;
 	}
 }

@@ -15,16 +15,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstraptoggle;
+package com.jwebmp.plugins.bootstrap.switch4;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
 import com.jwebmp.core.base.angular.services.IAngularModule;
 
-public class BSToggleAngularModule
+public class BSSwitch4AngularModule
 		extends AngularModuleBase
-		implements IAngularModule<BSToggleAngularModule>
+		implements IAngularModule<BSSwitch4AngularModule>
 {
-	public BSToggleAngularModule()
+	public BSSwitch4AngularModule()
 	{
 		super("ui.toggle");
 	}

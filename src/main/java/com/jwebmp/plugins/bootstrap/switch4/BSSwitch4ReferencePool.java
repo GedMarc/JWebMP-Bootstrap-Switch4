@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstraptoggle;
+package com.jwebmp.plugins.bootstrap.switch4;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.base.references.JavascriptReference;
@@ -28,7 +28,7 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum BSToggleReferencePool
+enum BSSwitch4ReferencePool
 		implements ReferencePool
 {
 	BootstrapSwitch(new JavascriptReference("BootstrapSwitch", 3.3, "bower_components/angular-bootstrap-toggle/dist/angular-bootstrap-toggle.min.js"),
@@ -44,12 +44,12 @@ enum BSToggleReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	BSToggleReferencePool()
+	BSSwitch4ReferencePool()
 	{
 
 	}
 
-	BSToggleReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	BSSwitch4ReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)

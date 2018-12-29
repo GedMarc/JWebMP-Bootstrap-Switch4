@@ -56,7 +56,7 @@ public class BSSwitch4<A extends Enum & AttributeDefinitions, J extends BSSwitch
 	@Override
 	public J bind(String variableName)
 	{
-		addAttribute(AngularAttributes.ngModel, variableName);
+		addAttribute(AngularAttributes.ngModel.getAttributeName(), variableName);
 		return (J) this;
 	}
 
@@ -65,7 +65,7 @@ public class BSSwitch4<A extends Enum & AttributeDefinitions, J extends BSSwitch
 	@NotNull
 	public J setRequired()
 	{
-		addAttribute(AngularAttributes.ngRequired, "true");
+		addAttribute(AngularAttributes.ngRequired.getAttributeName(), "true");
 		return (J) this;
 	}
 

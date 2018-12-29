@@ -16,6 +16,7 @@ module com.jwebmp.plugins.bootstrap.switch4 {
 	requires com.jwebmp.plugins.bootstrap4;
 	requires java.validation;
 	requires com.jwebmp.guicedinjection;
+	requires com.jwebmp.core.angularjs;
 
 	provides IPageConfigurator with BSSwitch4PageConfigurator;
 	provides IAngularModule with BSSwitch4AngularModule;

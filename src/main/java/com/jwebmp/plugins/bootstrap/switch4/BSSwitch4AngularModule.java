@@ -18,11 +18,9 @@
 package com.jwebmp.plugins.bootstrap.switch4;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
-import com.jwebmp.core.base.angular.services.IAngularModule;
 
 public class BSSwitch4AngularModule
-		extends AngularModuleBase
-		implements IAngularModule<BSSwitch4AngularModule>
+		extends AngularModuleBase<BSSwitch4AngularModule>
 {
 	public BSSwitch4AngularModule()
 	{

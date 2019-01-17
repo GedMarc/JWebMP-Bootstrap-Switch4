@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 /**
  * Configures the Bootstrap Page Configurator
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 08 Jun 2017
  */
 @PluginInformation(pluginName = "Bootstrap Switch",

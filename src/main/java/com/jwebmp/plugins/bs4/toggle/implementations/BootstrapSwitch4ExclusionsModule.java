@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.bootstrap.switch4.implementations;
+package com.jwebmp.plugins.bs4.toggle.implementations;
 
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;

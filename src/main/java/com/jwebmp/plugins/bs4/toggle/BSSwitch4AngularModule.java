@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstrap.switch4;
+package com.jwebmp.plugins.bs4.toggle;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
 

@@ -18,6 +18,7 @@
 package com.jwebmp.plugins.bootstrap.switch4;
 
 import com.jwebmp.plugins.bootstrap4.buttons.BSButtonOptions;
+import com.jwebmp.plugins.bs4.toggle.BSSwitch4;
 import org.junit.jupiter.api.Test;
 
 class BSSwitch4Test

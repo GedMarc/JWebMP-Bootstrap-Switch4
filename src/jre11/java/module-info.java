@@ -1,5 +1,8 @@
-module com.jwebmp.plugins.bootstrap.switch4 {
-	exports com.jwebmp.plugins.bootstrap.switch4;
+import com.jwebmp.plugins.bs4.toggle.BSSwitch4AngularModule;
+import com.jwebmp.plugins.bs4.toggle.BSSwitch4PageConfigurator;
+
+module com.jwebmp.plugins.bs4.toggle {
+	exports com.jwebmp.plugins.bs4.toggle;
 
 	requires com.jwebmp.core;
 	requires com.jwebmp.logmaster;
@@ -10,11 +13,11 @@ module com.jwebmp.plugins.bootstrap.switch4 {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
-	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.bootstrap.switch4.BSSwitch4PageConfigurator;
-	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.bootstrap.switch4.BSSwitch4AngularModule;
+	provides com.jwebmp.core.services.IPageConfigurator with BSSwitch4PageConfigurator;
+	provides com.jwebmp.core.base.angular.services.IAngularModule with BSSwitch4AngularModule;
 
-	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.bootstrap.switch4.implementations.BootstrapSwitch4ExclusionsModule;
-	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.bootstrap.switch4.implementations.BootstrapSwitch4ExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.bs4.toggle.implementations.BootstrapSwitch4ExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.bs4.toggle.implementations.BootstrapSwitch4ExclusionsModule;
 
-	opens com.jwebmp.plugins.bootstrap.switch4 to com.fasterxml.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.bs4.toggle to com.fasterxml.jackson.databind, com.jwebmp.core;
 }

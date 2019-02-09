@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.bootstrap.switch4;
+package com.jwebmp.plugins.bs4.toggle;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
@@ -72,7 +72,7 @@ public class BSSwitch4PageConfigurator
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);

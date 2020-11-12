@@ -5,7 +5,7 @@ module com.jwebmp.plugins.bs4.toggle {
 	requires com.guicedee.logmaster;
 
 	requires com.jwebmp.plugins.bootstrap4;
-	requires java.validation;
+	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 

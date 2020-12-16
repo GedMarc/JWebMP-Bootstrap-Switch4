@@ -1,3 +1,5 @@
+import com.jwebmp.plugins.bs4.toggle.implementations.BS4SwitchInclusionModule;
+
 module com.jwebmp.plugins.bs4.toggle {
 	exports com.jwebmp.plugins.bs4.toggle;
 
@@ -13,6 +15,7 @@ module com.jwebmp.plugins.bs4.toggle {
 	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.bs4.toggle.BSSwitch4AngularModule;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.bs4.toggle.implementations.BootstrapSwitch4ExclusionsModule;
-
+	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions with BS4SwitchInclusionModule;
+	
 	opens com.jwebmp.plugins.bs4.toggle to com.fasterxml.jackson.databind, com.jwebmp.core;
 }

@@ -31,8 +31,8 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
 enum BSSwitch4ReferencePool
 		implements ReferencePool
 {
-	BootstrapSwitch(new JavascriptReference("BootstrapSwitch", 3.3, "bower_components/angular-bootstrap-toggle/dist/angular-bootstrap-toggle.min.js"),
-	                new CSSReference("BootstrapSwitch", 3.3, "bower_components/angular-bootstrap-toggle/dist/angular-bootstrap-toggle.min.css")),
+	BootstrapSwitch(new JavascriptReference("BootstrapSwitch", 0.34, "bower_components/angular-bootstrap-toggle/dist/angular-bootstrap-toggle.min.js"),
+	                new CSSReference("BootstrapSwitch", 0.34, "bower_components/angular-bootstrap-toggle/dist/angular-bootstrap-toggle.min.css")),
 	BSToggleCustomStyles(null, new CSSReference("BSToggleCustomStyles", 1.0, "bstogglecustoms/bstogglecustomstyle.min.css"));
 	/**
 	 * Any sub data

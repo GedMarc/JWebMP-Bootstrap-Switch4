@@ -3,6 +3,7 @@ package com.jwebmp.plugins.bs4.toggle;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -16,8 +17,8 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "Bootstrap Switch",
 		pluginDescription = "Turn checkboxes    and radio buttons    into toggle switches  ",
-		pluginUniqueName = "jwebswing-bootstrap-switch",
-		pluginVersion = "3.3.4",
+		pluginUniqueName = "bootstrap-switch",
+		pluginVersion = "0.3.4",
 		pluginCategories = "toggle, radio button, checkbox, bootstrap, ui,web ui, framework",
 		pluginSubtitle = "Turn checkboxes    and radio buttons    into toggle switches  ",
 		pluginSourceUrl = "https://github.com/Bttstrp/bootstrap-switch/",
@@ -26,7 +27,12 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://bootstrapswitch.com/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapSwitch.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.bootstrap/jwebmp-bootstrap-toggle",
+		pluginGroupId = "com.jwebmp.plugins.bootstrap",
+		pluginArtifactId = "jwebmp-bootstrap-toggle",
+		pluginModuleName = "com.jwebmp.plugins.bs4.toggle",
+		pluginStatus = PluginStatus.Released
+)
 public class BSSwitch4PageConfigurator
 		implements IPageConfigurator<BSSwitch4PageConfigurator>
 {
@@ -34,7 +40,7 @@ public class BSSwitch4PageConfigurator
 	 * If this configurator is enabled
 	 */
 	private static boolean enabled = true;
-
+	
 	/*
 	 * Constructs a new BootstrapSwitchPageConfigurator
 	 */
@@ -42,7 +48,7 @@ public class BSSwitch4PageConfigurator
 	{
 		//Nothing needed
 	}
-
+	
 	/**
 	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
 	 * <p>
@@ -54,20 +60,19 @@ public class BSSwitch4PageConfigurator
 	{
 		return BSSwitch4PageConfigurator.enabled;
 	}
-
+	
 	/**
 	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
 	 * <p>
 	 * If this configurator is enabled
 	 *
-	 * @param mustEnable
-	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * @param mustEnable the enabled of this AngularAnimatedChangePageConfigurator object.
 	 */
 	public static void setEnabled(boolean mustEnable)
 	{
 		BSSwitch4PageConfigurator.enabled = mustEnable;
 	}
-
+	
 	@NotNull
 	@Override
 	public Page configure(Page page)
@@ -85,7 +90,7 @@ public class BSSwitch4PageConfigurator
 		}
 		return page;
 	}
-
+	
 	@Override
 	public boolean enabled()
 	{

@@ -37,11 +37,9 @@ import jakarta.validation.constraints.NotNull;
 @ComponentInformation(name = "Bootstrap Switch Check Box",
 		description = "Turn checkboxes    and radio buttons    into toggle switches  ",
 		url = "https://github.com/GedMarc/JWebMP-Bootstrap-Switch")
-public class BSSwitch4<A extends Enum & AttributeDefinitions, J extends BSSwitch4<A, J>>
+public class BSSwitch4<A extends Enum<?> & AttributeDefinitions, J extends BSSwitch4<A, J>>
 		extends Input<A, J>
 {
-
-
 	/*
 	 * Constructs a new BootstrapSwitchCheckBox
 	 */

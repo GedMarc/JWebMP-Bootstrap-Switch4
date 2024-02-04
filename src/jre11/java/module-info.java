@@ -4,7 +4,7 @@ module com.jwebmp.plugins.bs4.toggle {
 	exports com.jwebmp.plugins.bs4.toggle;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires com.jwebmp.plugins.bootstrap4;
 	requires jakarta.validation;
